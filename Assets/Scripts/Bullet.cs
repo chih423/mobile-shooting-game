@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 30f;
+    public float atk = 50f;
     private Rigidbody rb;
 
     void Start()
@@ -17,5 +18,16 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        // 如果碰撞到的是子彈
+        if (other.tag == "Enemy")
+        {
+            // 刪除自己
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
     }
 }
