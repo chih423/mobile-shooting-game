@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3784634536861268957}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.13175218, y: 0.49662066, z: 0.13175218}
+  m_LocalScale: {x: 0.25, y: 0.24, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6777070624520225243}
@@ -156,8 +156,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.95709896, b: 0, a: 1}
-      key1: {r: 1, g: 0.6981857, b: 0, a: 1}
+      key0: {r: 0.35686275, g: 0.58876806, b: 0.8117647, a: 1}
+      key1: {r: 0.7736824, g: 0.43164828, b: 0.9433962, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -239,8 +239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c0d7618a58734e819d274cead839d6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
-  atk: 50
+  speed: 20
+  atk: 40
 --- !u!54 &7887740421481487250
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -267,7 +267,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.075951695
+  m_Radius: 1
   m_Height: 1.0884615
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
