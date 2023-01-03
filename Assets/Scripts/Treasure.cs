@@ -11,7 +11,7 @@ public class Treasure : MonoBehaviour
         {
             GameVariables.keyCount --;
             Destroy (gameObject);
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(3);
         }
     }
 }
